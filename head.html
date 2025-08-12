@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RAGA - Under Construction</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      padding: 0px;
+      text-align: center;
+      background: #048f3b;
+      border-bottom: 1px solid #2d5f9a;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    .row img {
+      height: 120px;
+      width: auto;
+    }
+    .row h1 {
+      color: #cedede;
+      font-size: 3em;
+    }
+    .slideshow {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      overflow: hidden;
+    }
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 90%;
+      background-size: cover;
+      background-position: center;
+      opacity: 0;
+      animation: fade 12s infinite;
+    }
+    .slide:nth-child(1) {
+      background-image: url('bsdam.jpg');
+      animation-delay: 0s;
+    }
+    .slide:nth-child(2) {
+      background-image: url('kalingarayan.png');
+      animation-delay: 4s;
+    }
+    .slide:nth-child(3) {
+      background-image: url('turmeric.jpg');
+      animation-delay: 8s;
+    }
+    @keyframes fade {
+      0% { opacity: 0; }
+      8% { opacity: 1; }
+      33% { opacity: 1; }
+      41% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+      font-size: 48px;
+      font-weight: bold;
+      text-align: center;
+      text-shadow: 2px 2px 5px #000;
+      z-index: 10;
+    }
+    .center-text p {
+      font-size: 20px;
+      font-weight: normal;
+      margin-top: 10px;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <img src="logo1.png" alt="Logo" />
+      <h1>Retired Agricultural Graduates Association - RAGA</h1>
+    </div>
+  </header>
+
+  <div class="slideshow">
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="center-text">
+      🚧 Under Construction 🚧
+      <p>We’re working hard to bring this site to life. Stay tuned!</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 RAGA. All rights reserved.
+  </footer>
+</body>
+</html>
