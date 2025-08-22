@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RAGA - Home</title>
+  <style>
+  body{
+   background-color:#FDF6E3;
+   }
+ .container {
+  display: flex;
+  gap: 20px;
+}
+
+.welcome {
+  flex:70%;
+  background-color: #e8f5e9;
+  padding: 20px;
+  border-radius: 8px;
+  font-size:18px;
+  line-height:1.6;
+}
+.card {
+    background-color: #FDFDFD;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+	padding-top:10px;
+    flex: 1;
+    min-width: 200px;
+}
+.card p, .card ul {
+    color: #333333;
+	font-family:Arial Narrow;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+.card-header {
+    background: linear-gradient(to right, #ccfcbb, #4CAF50);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
+    margin: -20px -20px 15px -20px;
+    text-align: center;
+}
+
+.member-login {
+  flex:30%;
+  background-color: #e3f2fd;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.member-login h2 {
+  color: #1b5e20; /* Deep green for heading */
+}
+
+.member-login label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.member-login input {
+  width: 20%;
+  padding: 8px;
+  margin-top: 5px;
+}
+
+.member-login button {
+  margin-top: 15px;
+  background-color: #1b5e20;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.card a {
+    color: #1565C0 !important;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+.card a {
+    color: #1565C0;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+    header {
+      padding: 0px;
+	  text-color:#white;
+      text-align: center;
+      background: #2e7d32;
+      border-bottom: 1px solid #2d5f9a;
+    }
+
+    .row img {
+      height: 120px; /* Increased from 80px */
+      width: auto;
+    }
+
+    .row h1 {
+      color: #cedede;
+      font-size: 3em;
+    }
+
+   nav {
+		padding-bottom: 2px; /* or even 0 if needed */
+		margin-top: -5px; /* moves it upward slightly */
+	}
+
+    nav a {
+      color: #cedede;
+      margin: 0 10px;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      color: #00bcd4;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .row img {
+      height: 80px;
+    }
+
+    .container {
+      text-align: left;
+	  background-color: #E6F4EA;
+	  text-color:#1B5E20;
+	  font-family: Arial;
+	  font-size:16px;
+    }
+
+    ul.myUL {
+      display: inline-block;
+      text-align: left;
+      font-size: 20px;
+      line-height: 1.6;
+	  padding-right:10px;
+		}
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .card {
+      flex: 0 0 calc(16.66% - 20px);
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 5px;
+      background-color:#c4c4b9;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .profile-card {
+      margin: 10px auto;
+    }
+
+    .profile-pic {
+      width: 175px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    h1 {
+      color:#282470;
+      margin-top: 20px;
+      text-align: center;
+    }
+	h3 {
+		font-family:Arial;
+		font-size:20px;
+      color:#0B4F0C;
+      margin-top: 20px;
+      text-align: center;
+    }
+	p {
+        text-align: center;
+        line-height: 1;
+    }
+    .column2 {
+      display: flex;
+      gap: 20px;
+      background-color: none;
+      padding: 20px;
+    }
+    @media (max-width: 1024px) {
+      .card {
+        flex: 0 0 calc(33.33% - 20px);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+      .card {
+        flex: 0 0 calc(50% - 20px);
+      }
+      .column2 {
+        flex-direction: column;
+      }
+      .left-section, .right-section {
+        flex: 100%;
+      }
+      .profile-pic {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .card {
+        flex: 0 0 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="row">
+    <img src="logo.jpg" alt="Logo" />
+    <h1>Retired Agricultural Graduates Association - RAGA</h1>
+  </div>
+  <nav>
+	<a href="head.html">Home</a>
+    <a href="ab.html">About</a>
+    <a href="members.html">Members</a>
+	<a href="gallery.html">Gallery</a>
+  </nav>
+</header>
+
+<div class="container">
+    <div class="welcome">
+        <div class ="card-header">Welcome</div>
+        <ul class ="myUL">
+            <li>Started during the year 2013 (15.09.2013)</li>
+            <li>Meeting all Retired Agricultural Graduates periodically.</li>
+            <li>Taking care of the problems of retired Agri. Graduates.</li>
+            <li>Serving the farming community to get up to date technical knowledge.</li>
+            <li>Interacting Agricultural related policies in a productive way.</li>
+            <li>Safeguarding members, not to affect mentally, physically, financially or morally.</li>
+            <li>All retired Agricultural graduates can become Member.</li>
+        </ul>
+    </div>
+
+    <div class="member-login">
+        <div class ="card-header">Member Login</div>
+		<p>Members can access personalized updates, documents, and contact info after login.</p>
+        <button class="login-button">Login</button>
+        <p>Need help?<br>Email us at: <a href="mailto:support@raga.org">support@raga.org</a></p>
+    </div>
+</div>
+<br>
+<div class ="card-header">Role of RAGA in members welfare</div>
+	<ul class="myUL">
+  <li>Continuous fight to retain GO 448.</li>
+  <li>Up to date settlement of Covid 19 claim.</li>
+  <li>Recovery stoppage to pensioners.</li>
+  <li>Quick follow up to get family pension.</li>
+  <li>Watch timely settlement of DA arrears and other claims.</li>
+  <li>Follow up in Medical reimbursement claims.</li>
+  <li>Contact AG office to avoid proposal delays.</li>
+  <li>Visit banks to release freezed accounts(SBI).</li>
+  <li>Attend all pensioners grievance meeting-treasury/district level.</li>
+  <li>Conduct RAGA meet with leading doctors, Treasury official and Insurance Co-ordinators.</li>
+  <li>Post all pension related messages in RAGA district whatsapp group.</li>
+  <li>Distribute Insurance book with all treasury related forms.</li>
+  <li>Help Officers to get safe retirement in department who are at the verge of retirement.</li>
+  <li>Create RAGA Website with up-to-date valuable informations.</li>
+   </ul>
+<!-- RAGA State Office Bearers -->
+<div class ="card-header">RAGA State office Bearers</div>
+<div class="card-container">
+<div class="card">
+    <h3>N.Rajasekaran</h3>
+    <p><i><b>Founder President</b></i></p>
+    <p>K2, Housing Unit, Salai Road,<br> Trichy - 620003.</p>
+	<p>M:+91-98424 23476</p>
+  </div>
+  <div class="card">
+    <h3>P.Sudhakar</h3>
+    <p><i><b>State President</b></i></p>
+    <p>25/53, 48th street, Ashok Nagar, <br>Chennai -83</p>
+    <p>M:+91-90031 39061</p>
+  </div>
+  <div class="card">
+    <h3>N.Thirumavalavan</h3>
+    <p><i><b>State Vice President</b></i></p>
+    <p>No.56, First Kullakkarai street, Thiruvenkatanagar, West Tambaram, Chennai - 45</p>
+	<p>M: +91- 9444868544</p>
+  </div>
+  <div class="card">
+    <h3>K.Ganesan</h3>
+    <p><i><b>State Secretary</b></i></p>
+    <p>4/347, 1st street, Saravana Bhava Nagar, Old Perungalathur,<br> Chennai - 63</p>
+    <p>M: +91-94446 04037</p>
+  </div>
+  <div class="card">
+    <h3>G.Muthudoss</h3>
+    <p><i><b>State Joint Secretary</i></b></p>
+    <p>H.90, Thamirapathy Colony, Maharajanagar Post, <br>Tirunelveli - 627 011.</p>
+    <p>M: +91-9486453396</p>
+  </div>
+  <div class="card">
+    <h3>A.Sambasivam</h3>
+    <p><i><b>State Treasurer</i></b></p>
+    <p>18/1, Spic Nagar, Vijayanagar, Velachery, Chennai - 4.</p>
+    <p>M: +91-9884198604</p>
+  </div>
+</div>
+
+<!-- RAGA Erode Office Bearers -->
+<h1>RAGA Erode Office Bearers</h1>
+<div class="card-container">
+
+  <div class="card">
+    <div class="profile-card">
+      <img src="natarajan_pr.jpg" alt="N.Natarjan" class="profile-pic">
+    </div>
+    <h3>N.Natarajan</h3>
+    <p><i><b>President</b></i></p>
+    <p>30, Kakkanji Nagar, Sadayampalayam Road, Railway Colony Post,<br> Erode - 638 002.</p>
+    <p>M:+91-98404 73650</p>
+  </div>
+
+  <div class="card">
+    <div class="profile-card">
+      <img src="murugesan_vp.jpg" alt="K.Murugesan" class="profile-pic">
+    </div>
+    <h3>K.Murugesan</h3>
+    <p><i><b>Vice President</i></b></p>
+    <p>4/873, Pavu Illam, Selvapuram, S.P.Nagar, Gobi - 638476.</p>
+    <p>M:+91-98425 65561</p>
+  </div>
+
+  <div class="card">
+    <div class="profile-card">
+      <img src="prabakaran_sec.jpg" alt="A.Prabakaran" class="profile-pic">
+    </div>
+    <h3>A.Prabakaran</h3>
+    <p><i><b>Secretary</b></i></p>
+    <p>20, Kannaiyan street,<br> Erode -638003</p>
+    <p>M: +91-9865198680</p>
+  </div>
+
+  <div class="card">
+    <div class="profile-card">
+      <img src="mahalingam_v.jpg" alt="V.Mahalingam" class="profile-pic">
+    </div>
+    <h3>V.Mahalingam</h3>
+    <p><i><b>Joint Secretary</i></b></p>
+    <p>61/A, Lakshmi Garden, Thindal kel, Thinda Post, <br>Erode - 638 012.</p>
+    <p>M: +91-9486453396</p>
+  </div>
+
+  <div class="card">
+    <div class="profile-card">
+      <img src="umapathy_tr.jpg" alt="V.Umapathy" class="profile-pic">
+    </div>
+    <h3>V.Umapathy</h3>
+    <p><i><b>Treasurer</i></b></p>
+    <p>13B, Aaru kavalai thottam,<br> Gobi-638452.</p>
+    <p>M: +91-98944 32819</p>
+  </div>
+  <div class="card">
+    <div class="profile-card">
+      <img src="kuland.jpg" alt="New Member" class="profile-pic">
+    </div>
+    <h3>L.Kolandaivelu</h3>
+    <p><i><b>Public Relations Officer</i></b></p>
+    <p>A-13, Housing Unit,Kollampalayam, <br>Erode - 638 002..</p>
+    <p>M:+91-75024 02545</p>
+  </div>
+
+</div>
+
+</body>
+</html>
