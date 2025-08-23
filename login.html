@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column; /* stack header, main, footer vertically */
+      background-color: #eaeaea;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      display: flex;
+      padding: 0px;
+	  font-size:1.6em;
+      text-align: center;
+      background: #048f3b;
+      border-bottom: 1px solid #2d5f9a;
+      width: 100%;
+    }
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+      margin: auto;
+    }
+    .row img {
+      height: 120px;
+      width: auto;
+    }
+    .row h1 {
+      color: #cedede;
+      font-size: 2em;
+    }
+
+    main {
+      flex: 1; /* take remaining space between header and footer */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background-color: #ffffff;
+      padding: 50px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    .login-container label {
+      display: block;
+      font-size: 18px;
+      margin: 15px 0 5px;
+    }
+
+    .login-container input[type="text"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      padding: 15px;
+      font-size: 18px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      margin-top: 25px;
+      cursor: pointer;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="row">
+      <img src="logo1.png" alt="Logo" />
+      <h1>Retired Agricultural Graduates Association - RAGA</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="login-container">
+      <h2>Member Login</h2>
+      <form method="POST" action="login.php">
+        <label>Username:</label>
+        <input type="text" name="username" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <input type="submit" value="Login">
+		<p style="text-align: center; font-size: 18px; color: #666; margin-top: 15px;">
+    Need help? <br>Email us at: <a href="mailto:eroderaga@gmail.com" style="color: #2d5f9a;">eroderaga@gmail.com</a>
+  </p>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 RAGA. All rights reserved.
+  </footer>
+</body>
+</html>
